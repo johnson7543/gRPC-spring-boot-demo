@@ -1,0 +1,4 @@
+com\grpc\spring\server\service\GrpcOrderService.class
+com\grpc\spring\server\startup\GrpcSpringServerStartup.class
+com\grpc\spring\server\config\GlobalInterceptorConfiguration.class
+com\grpc\spring\server\config\LogGrpcInterceptor.class

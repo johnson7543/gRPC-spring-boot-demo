@@ -1,0 +1,15 @@
+server:
+  port: 18080
+spring:
+  application:
+    name: grpc-spring-client
+eureka:
+  instance:
+    prefer-ip-address: true
+    status-page-url-path: /actuator/info
+    health-check-url-path: /actuator/health
+  client:
+    register-with-eureka: false
+    fetch-registry: true
+    service-url:
+      defaultZone: http://${eureka.instance.hostname:eureka.kyeapi.com}:${eureka.server.port:18761}/eureka/

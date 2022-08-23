@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.grpc.spring.api.order";
+option java_outer_classname = "OrderServiceProto";
+
+// The service definition.
+service OrderService {
+    // The service method
+    rpc GetOrderInfo (GetOrderRequest) returns (GetOrderReply) {
+    }
+}
+
+// The request message
+message GetOrderRequest {
+    string orderNo = 1;
+}
+
+// The response message
+message GetOrderReply {
+    string orderNo = 1;
+    string userName = 2;
+    string address = 3;
+    int64 price = 4;
+}
